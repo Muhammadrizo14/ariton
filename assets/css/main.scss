@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(fonts.scss);
+
+
+@layer base {
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/inter/Inter_18pt-Regular.ttf) format('woff2');
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+h1 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 400;
+  @apply bg-brand-dark-grey;
+}
