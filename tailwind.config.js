@@ -16,8 +16,11 @@ module.exports = {
     },
     container: {
       center: true,
-      xl: '1400px',
-      '2xl': '1400px',
+      screens: {
+        xl: '1272px',
+        '2xl': '1272px',
+      },
+
     },
     colors: {
       'brand-black': '#1C1C1C',

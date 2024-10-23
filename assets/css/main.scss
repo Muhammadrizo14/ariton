@@ -23,6 +23,7 @@
 }
 
 
+
 h1 {
   font-size: 34px;
   font-weight: 600;
@@ -36,5 +37,30 @@ h2 {
 p {
   font-size: 13px;
   font-weight: 400;
-  @apply bg-brand-dark-grey;
+}
+
+.mainSwiper2 {
+  .swiper-pagination-bullet {
+    width: 30px;
+    height: 3px;
+    border-radius: 0;
+    opacity: 1;
+    background-color: white;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #007aff;
+  }
+}
+
+.mainSwiper {
+  .swiper-pagination-bullet {
+    width: 60px;
+    height: 3px;
+    border-radius: 0;
+    opacity: 1;
+    background-color: white;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #007aff;
+  }
 }

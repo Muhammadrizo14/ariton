@@ -1,6 +1,6 @@
 <template>
   <button :class="buttonClasses">
-    <div class="flex items-center gap-3">
+    <div class="flex items-center justify-center gap-3">
       <slot name="icon"></slot>
       <slot name="default"></slot>
     </div>
@@ -30,7 +30,7 @@ const props = defineProps({
 });
 
 const buttonClasses = computed(() => {
-  let baseClasses = 'border border-solid rounded-xl py-3 px-6 w-full';
+  let baseClasses = 'border border-solid rounded-xl py-3 px-6 w-full ';
 
 
   if (props.filled) {
@@ -44,7 +44,7 @@ const buttonClasses = computed(() => {
     return `${baseClasses} bg-transparent border-brand-light-grey text-brand-black hover:opacity-95`;
   }
   else {
-    return `${baseClasses} border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white hover:border-[#A7501B]`;
+    return `${baseClasses} border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-brand-white hover:border-[#136F63]`;
   }
 
 
